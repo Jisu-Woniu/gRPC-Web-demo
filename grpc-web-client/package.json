@@ -13,8 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@buf/jisu-woniu_grpc-web-demo.bufbuild_es": "1.8.0-20240415044040-ac300b86d3fb.2",
-    "@buf/jisu-woniu_grpc-web-demo.connectrpc_es": "1.4.0-20240415044040-ac300b86d3fb.2",
+    "@buf/jisu-woniu_grpc-web-demo.connectrpc_es": "1.4.0-20240415110847-49e15a6b4e83.2",
     "@bufbuild/protobuf": "^1.8.0",
     "@connectrpc/connect": "^1.4.0",
     "@connectrpc/connect-web": "^1.4.0",

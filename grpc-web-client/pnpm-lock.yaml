@@ -5,12 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@buf/jisu-woniu_grpc-web-demo.bufbuild_es':
-    specifier: 1.8.0-20240415044040-ac300b86d3fb.2
-    version: 1.8.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0)
   '@buf/jisu-woniu_grpc-web-demo.connectrpc_es':
-    specifier: 1.4.0-20240415044040-ac300b86d3fb.2
-    version: 1.4.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0)
+    specifier: 1.4.0-20240415110847-49e15a6b4e83.2
+    version: 1.4.0-20240415110847-49e15a6b4e83.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0)
   '@bufbuild/protobuf':
     specifier: ^1.8.0
     version: 1.8.0
@@ -437,28 +434,20 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@buf/jisu-woniu_grpc-web-demo.bufbuild_es@1.7.2-20240415044040-ac300b86d3fb.1(@bufbuild/protobuf@1.8.0):
-    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.bufbuild_es/-/jisu-woniu_grpc-web-demo.bufbuild_es-1.7.2-20240415044040-ac300b86d3fb.1.tgz}
+  /@buf/jisu-woniu_grpc-web-demo.bufbuild_es@1.7.2-20240415110847-49e15a6b4e83.1(@bufbuild/protobuf@1.8.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.bufbuild_es/-/jisu-woniu_grpc-web-demo.bufbuild_es-1.7.2-20240415110847-49e15a6b4e83.1.tgz}
     peerDependencies:
       '@bufbuild/protobuf': ^1.7.2
     dependencies:
       '@bufbuild/protobuf': 1.8.0
     dev: false
 
-  /@buf/jisu-woniu_grpc-web-demo.bufbuild_es@1.8.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0):
-    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.bufbuild_es/-/jisu-woniu_grpc-web-demo.bufbuild_es-1.8.0-20240415044040-ac300b86d3fb.2.tgz}
-    peerDependencies:
-      '@bufbuild/protobuf': ^1.8.0
-    dependencies:
-      '@bufbuild/protobuf': 1.8.0
-    dev: false
-
-  /@buf/jisu-woniu_grpc-web-demo.connectrpc_es@1.4.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0):
-    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.connectrpc_es/-/jisu-woniu_grpc-web-demo.connectrpc_es-1.4.0-20240415044040-ac300b86d3fb.2.tgz}
+  /@buf/jisu-woniu_grpc-web-demo.connectrpc_es@1.4.0-20240415110847-49e15a6b4e83.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.connectrpc_es/-/jisu-woniu_grpc-web-demo.connectrpc_es-1.4.0-20240415110847-49e15a6b4e83.2.tgz}
     peerDependencies:
       '@connectrpc/connect': ^1.4.0
     dependencies:
-      '@buf/jisu-woniu_grpc-web-demo.bufbuild_es': 1.7.2-20240415044040-ac300b86d3fb.1(@bufbuild/protobuf@1.8.0)
+      '@buf/jisu-woniu_grpc-web-demo.bufbuild_es': 1.7.2-20240415110847-49e15a6b4e83.1(@bufbuild/protobuf@1.8.0)
       '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.8.0)
     transitivePeerDependencies:
       - '@bufbuild/protobuf'
