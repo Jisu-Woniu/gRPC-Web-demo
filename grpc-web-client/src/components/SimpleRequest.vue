@@ -17,7 +17,7 @@ const greetMutation = useMutation({ mutationFn: greetClient.greet });
 const name = echoMutation.data;
 const greeting = greetMutation.data;
 
-const onclick = async () => {
+const onSubmit = async () => {
   await Promise.all([
     echoMutation.mutateAsync({ message: input.value }),
     greetMutation.mutateAsync({ name: input.value }),
@@ -26,14 +26,23 @@ const onclick = async () => {
 </script>
 
 <template>
-  <form>
+  <form @submit.prevent="onSubmit">
     <label for="name">Your name: </label>
     <input id="name" v-model="input" />
-    <button type="button" @click="onclick">send</button>
+    <button>Send</button>
   </form>
 
   <p>Your name is: {{ name?.message }}</p>
   <p>Greet from server: {{ greeting?.greeting }}</p>
 </template>
 
-<style scoped></style>
+<style scoped>
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin: 0.5em auto;
+}
+</style>

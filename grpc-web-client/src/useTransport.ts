@@ -1,4 +1,4 @@
-import { inject } from "vue";
+import { inject, type InjectionKey } from "vue";
 import { ConnectError, type Transport } from "@connectrpc/connect";
 
 const fallbackTransportError = new ConnectError(
@@ -13,5 +13,6 @@ export const fallbackTransport = {
   },
 };
 
-export const useTransport: () => Transport = () =>
-  inject("transport", fallbackTransport);
+export const defaultTransport: InjectionKey<Transport> = Symbol();
+
+export const useTransport = () => inject(defaultTransport, fallbackTransport);

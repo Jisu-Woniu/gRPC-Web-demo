@@ -40,6 +40,9 @@ devDependencies:
   '@tanstack/eslint-plugin-query':
     specifier: ^5.28.11
     version: 5.28.11(eslint@8.57.0)(typescript@5.4.5)
+  '@tanstack/vue-query-devtools':
+    specifier: ^5.29.0
+    version: 5.29.0(@tanstack/vue-query@5.29.0)(vue@3.4.21)
   '@tsconfig/node20':
     specifier: ^20.1.4
     version: 20.1.4
@@ -961,11 +964,24 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       remove-accents: 0.5.0
-    dev: false
 
   /@tanstack/query-core@5.29.0:
     resolution: {integrity: sha512-WgPTRs58hm9CMzEr5jpISe8HXa3qKQ8CxewdYZeVnA54JrPY9B1CZiwsCoLpLkf0dGRZq+LcX5OiJb0bEsOFww==}
-    dev: false
+
+  /@tanstack/query-devtools@5.28.10:
+    resolution: {integrity: sha512-5UN629fKa5/1K/2Pd26gaU7epxRrYiT1gy+V+pW5K6hnf1DeUKK3pANSb2eHKlecjIKIhTwyF7k9XdyE2gREvQ==}
+    dev: true
+
+  /@tanstack/vue-query-devtools@5.29.0(@tanstack/vue-query@5.29.0)(vue@3.4.21):
+    resolution: {integrity: sha512-t1nss1ObVIkXSuRznTrK9gzJu7HrwokZodW6OMUWqvkSkN9wmGqqStapl1n6SGVvenu50+SvAi1Y8QEnR5vLjA==}
+    peerDependencies:
+      '@tanstack/vue-query': ^5.29.0
+      vue: ^3.3.0
+    dependencies:
+      '@tanstack/query-devtools': 5.28.10
+      '@tanstack/vue-query': 5.29.0(vue@3.4.21)
+      vue: 3.4.21(typescript@5.4.5)
+    dev: true
 
   /@tanstack/vue-query@5.29.0(vue@3.4.21):
     resolution: {integrity: sha512-EYayEeVA4JwJrs3vPuDOd+4jVxvUJV1vAxsv7aflvBml6qR7EB9EkN8hW6MI7ciIJZORPiBye5VyveHR5SOlKg==}
@@ -981,7 +997,6 @@ packages:
       '@vue/devtools-api': 6.6.1
       vue: 3.4.21(typescript@5.4.5)
       vue-demi: 0.14.7(vue@3.4.21)
-    dev: false
 
   /@tsconfig/node20@20.1.4:
     resolution: {integrity: sha512-sqgsT69YFeLWf5NtJ4Xq/xAF8p4ZQHlmGW74Nu2tD4+g5fAsposc4ZfaaPixVu4y01BEiDCWLRDCvDM5JOsRxg==}
@@ -1310,7 +1325,6 @@ packages:
 
   /@vue/devtools-api@6.6.1:
     resolution: {integrity: sha512-LgPscpE3Vs0x96PzSSB4IGVSZXZBZHpfxs+ZA1d+VEPwHdOXowy/Y2CsvCAIFrf+ssVU1pD1jidj505EpUnfbA==}
-    dev: false
 
   /@vue/devtools-core@7.0.27(vite@5.2.8)(vue@3.4.21):
     resolution: {integrity: sha512-3rbtNGxFFFPfIObgTAPIw0h0rJy+y1PrbfgM9nXRf3/FIJkthfS19yj31pj9EWIqRsyiqK5u1Ni7SAJZ0vsQOA==}
@@ -2529,7 +2543,6 @@ packages:
 
   /remove-accents@0.5.0:
     resolution: {integrity: sha512-8g3/Otx1eJaVD12e31UbJj1YzdtVvzH85HV7t+9MJYk/u3XmkOUJ5Ys9wQrf9PCPK8+xn4ymzqYCiZl6QWKn+A==}
-    dev: false
 
   /resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
@@ -2890,7 +2903,6 @@ packages:
         optional: true
     dependencies:
       vue: 3.4.21(typescript@5.4.5)
-    dev: false
 
   /vue-eslint-parser@9.4.2(eslint@8.57.0):
     resolution: {integrity: sha512-Ry9oiGmCAK91HrKMtCrKFWmSFWvYkpGglCeFAIqDdr9zdXmMMpJOmUJS7WWsW7fX81h6mwHmUZCQQ1E0PkSwYQ==}
