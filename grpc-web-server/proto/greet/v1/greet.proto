@@ -2,14 +2,20 @@ syntax = "proto3";
 
 package greet.v1;
 
+// A service for handling greetings
 service GreetService {
+  // Handling greetings
   rpc Greet(GreetRequest) returns (GreetResponse);
 }
 
+// Request of GreetService.Greet rpc
 message GreetRequest {
+  // Name of user
   string name = 1;
 }
 
+// Response of GreetService.Greet rpc
 message GreetResponse {
+  // The greeting from server
   string greeting = 1;
 }
