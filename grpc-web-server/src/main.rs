@@ -1,4 +1,4 @@
-use tonic::transport::Server;
+use tonic::{codec::CompressionEncoding, transport::Server};
 use tonic_web::enable;
 
 use crate::{
@@ -12,8 +12,12 @@ mod server;
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let addr = "127.0.0.1:50051".parse().unwrap();
-    let echo = EchoServiceServer::new(Echo);
-    let greet = GreetServiceServer::new(Greet);
+    let echo = EchoServiceServer::new(Echo)
+        .accept_compressed(CompressionEncoding::Gzip)
+        .accept_compressed(CompressionEncoding::Zstd);
+    let greet = GreetServiceServer::new(Greet)
+        .accept_compressed(CompressionEncoding::Gzip)
+        .accept_compressed(CompressionEncoding::Zstd);
 
     eprintln!("Listening on: http://{}", addr);
 

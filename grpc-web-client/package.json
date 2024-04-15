@@ -13,11 +13,10 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@buf/jisu-woniu_grpc-web-demo.bufbuild_es": "1.8.0-20240414194024-e039216725de.2",
-    "@buf/jisu-woniu_grpc-web-demo.connectrpc_query-es": "1.3.1-20240414194024-e039216725de.2",
+    "@buf/jisu-woniu_grpc-web-demo.bufbuild_es": "1.8.0-20240415044040-ac300b86d3fb.2",
+    "@buf/jisu-woniu_grpc-web-demo.connectrpc_es": "1.4.0-20240415044040-ac300b86d3fb.2",
     "@bufbuild/protobuf": "^1.8.0",
     "@connectrpc/connect": "^1.4.0",
-    "@connectrpc/connect-query": "^1.3.1",
     "@connectrpc/connect-web": "^1.4.0",
     "@tanstack/vue-query": "^5.29.0",
     "google-protobuf": "^3.21.2",
@@ -25,21 +24,21 @@
     "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.8.0",
+    "@rushstack/eslint-patch": "^1.10.2",
     "@tanstack/eslint-plugin-query": "^5.28.11",
     "@tsconfig/node20": "^20.1.4",
-    "@types/node": "^20.12.5",
+    "@types/node": "^20.12.7",
     "@vitejs/plugin-vue": "^5.0.4",
     "@vue/eslint-config-prettier": "^9.0.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.23.0",
+    "eslint-plugin-vue": "^9.25.0",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
-    "typescript": "~5.4.0",
+    "typescript": "~5.4.5",
     "vite": "^5.2.8",
-    "vite-plugin-vue-devtools": "^7.0.25",
-    "vue-tsc": "^2.0.11"
+    "vite-plugin-vue-devtools": "^7.0.27",
+    "vue-tsc": "^2.0.13"
   }
 }

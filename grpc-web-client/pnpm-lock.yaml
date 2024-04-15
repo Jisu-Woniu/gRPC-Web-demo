@@ -6,20 +6,17 @@ settings:
 
 dependencies:
   '@buf/jisu-woniu_grpc-web-demo.bufbuild_es':
-    specifier: 1.8.0-20240414194024-e039216725de.2
-    version: 1.8.0-20240414194024-e039216725de.2(@bufbuild/protobuf@1.8.0)
-  '@buf/jisu-woniu_grpc-web-demo.connectrpc_query-es':
-    specifier: 1.3.1-20240414194024-e039216725de.2
-    version: 1.3.1-20240414194024-e039216725de.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect-query@1.3.1)
+    specifier: 1.8.0-20240415044040-ac300b86d3fb.2
+    version: 1.8.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0)
+  '@buf/jisu-woniu_grpc-web-demo.connectrpc_es':
+    specifier: 1.4.0-20240415044040-ac300b86d3fb.2
+    version: 1.4.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0)
   '@bufbuild/protobuf':
     specifier: ^1.8.0
     version: 1.8.0
   '@connectrpc/connect':
     specifier: ^1.4.0
     version: 1.4.0(@bufbuild/protobuf@1.8.0)
-  '@connectrpc/connect-query':
-    specifier: ^1.3.1
-    version: 1.3.1(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0)(@tanstack/react-query@5.29.2)(react-dom@18.2.0)(react@18.2.0)
   '@connectrpc/connect-web':
     specifier: ^1.4.0
     version: 1.4.0(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0)
@@ -38,7 +35,7 @@ dependencies:
 
 devDependencies:
   '@rushstack/eslint-patch':
-    specifier: ^1.8.0
+    specifier: ^1.10.2
     version: 1.10.2
   '@tanstack/eslint-plugin-query':
     specifier: ^5.28.11
@@ -47,7 +44,7 @@ devDependencies:
     specifier: ^20.1.4
     version: 20.1.4
   '@types/node':
-    specifier: ^20.12.5
+    specifier: ^20.12.7
     version: 20.12.7
   '@vitejs/plugin-vue':
     specifier: ^5.0.4
@@ -65,7 +62,7 @@ devDependencies:
     specifier: ^8.57.0
     version: 8.57.0
   eslint-plugin-vue:
-    specifier: ^9.23.0
+    specifier: ^9.25.0
     version: 9.25.0(eslint@8.57.0)
   npm-run-all2:
     specifier: ^6.1.2
@@ -74,16 +71,16 @@ devDependencies:
     specifier: ^3.2.5
     version: 3.2.5
   typescript:
-    specifier: ~5.4.0
+    specifier: ~5.4.5
     version: 5.4.5
   vite:
     specifier: ^5.2.8
     version: 5.2.8(@types/node@20.12.7)
   vite-plugin-vue-devtools:
-    specifier: ^7.0.25
+    specifier: ^7.0.27
     version: 7.0.27(vite@5.2.8)(vue@3.4.21)
   vue-tsc:
-    specifier: ^2.0.11
+    specifier: ^2.0.13
     version: 2.0.13(typescript@5.4.5)
 
 packages:
@@ -437,52 +434,35 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@buf/jisu-woniu_grpc-web-demo.bufbuild_es@1.7.2-20240414194024-e039216725de.1(@bufbuild/protobuf@1.8.0):
-    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.bufbuild_es/-/jisu-woniu_grpc-web-demo.bufbuild_es-1.7.2-20240414194024-e039216725de.1.tgz}
+  /@buf/jisu-woniu_grpc-web-demo.bufbuild_es@1.7.2-20240415044040-ac300b86d3fb.1(@bufbuild/protobuf@1.8.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.bufbuild_es/-/jisu-woniu_grpc-web-demo.bufbuild_es-1.7.2-20240415044040-ac300b86d3fb.1.tgz}
     peerDependencies:
       '@bufbuild/protobuf': ^1.7.2
     dependencies:
       '@bufbuild/protobuf': 1.8.0
     dev: false
 
-  /@buf/jisu-woniu_grpc-web-demo.bufbuild_es@1.8.0-20240414194024-e039216725de.2(@bufbuild/protobuf@1.8.0):
-    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.bufbuild_es/-/jisu-woniu_grpc-web-demo.bufbuild_es-1.8.0-20240414194024-e039216725de.2.tgz}
+  /@buf/jisu-woniu_grpc-web-demo.bufbuild_es@1.8.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.bufbuild_es/-/jisu-woniu_grpc-web-demo.bufbuild_es-1.8.0-20240415044040-ac300b86d3fb.2.tgz}
     peerDependencies:
       '@bufbuild/protobuf': ^1.8.0
     dependencies:
       '@bufbuild/protobuf': 1.8.0
     dev: false
 
-  /@buf/jisu-woniu_grpc-web-demo.connectrpc_query-es@1.3.1-20240414194024-e039216725de.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect-query@1.3.1):
-    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.connectrpc_query-es/-/jisu-woniu_grpc-web-demo.connectrpc_query-es-1.3.1-20240414194024-e039216725de.2.tgz}
+  /@buf/jisu-woniu_grpc-web-demo.connectrpc_es@1.4.0-20240415044040-ac300b86d3fb.2(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0):
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/jisu-woniu_grpc-web-demo.connectrpc_es/-/jisu-woniu_grpc-web-demo.connectrpc_es-1.4.0-20240415044040-ac300b86d3fb.2.tgz}
     peerDependencies:
-      '@bufbuild/protobuf': ^v1.7.2
-      '@connectrpc/connect-query': ^1.3.1
+      '@connectrpc/connect': ^1.4.0
     dependencies:
-      '@buf/jisu-woniu_grpc-web-demo.bufbuild_es': 1.7.2-20240414194024-e039216725de.1(@bufbuild/protobuf@1.8.0)
-      '@bufbuild/protobuf': 1.8.0
-      '@connectrpc/connect-query': 1.3.1(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0)(@tanstack/react-query@5.29.2)(react-dom@18.2.0)(react@18.2.0)
+      '@buf/jisu-woniu_grpc-web-demo.bufbuild_es': 1.7.2-20240415044040-ac300b86d3fb.1(@bufbuild/protobuf@1.8.0)
+      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.8.0)
+    transitivePeerDependencies:
+      - '@bufbuild/protobuf'
     dev: false
 
   /@bufbuild/protobuf@1.8.0:
     resolution: {integrity: sha512-qR9FwI8QKIveDnUYutvfzbC21UZJJryYrLuZGjeZ/VGz+vXelUkK+xgkOHsvPEdYEdxtgUUq4313N8QtOehJ1Q==}
-    dev: false
-
-  /@connectrpc/connect-query@1.3.1(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0)(@tanstack/react-query@5.29.2)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-VAogPNGVfnH2satUhXuG+ZUMj63xmTMl4McqyzCYw0ezzqt8i/tpbpf6OetlbvO45TTUYwaR4cAbzu8AgMNaFQ==}
-    peerDependencies:
-      '@bufbuild/protobuf': ^1.3.3
-      '@connectrpc/connect': ^1.1.2
-      '@tanstack/react-query': 5.x
-      react: ^18.2.0
-      react-dom: ^18.2.0
-    dependencies:
-      '@bufbuild/protobuf': 1.8.0
-      '@connectrpc/connect': 1.4.0(@bufbuild/protobuf@1.8.0)
-      '@tanstack/react-query': 5.29.2(react@18.2.0)
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-      stable-hash: 0.0.4
     dev: false
 
   /@connectrpc/connect-web@1.4.0(@bufbuild/protobuf@1.8.0)(@connectrpc/connect@1.4.0):
@@ -985,15 +965,6 @@ packages:
 
   /@tanstack/query-core@5.29.0:
     resolution: {integrity: sha512-WgPTRs58hm9CMzEr5jpISe8HXa3qKQ8CxewdYZeVnA54JrPY9B1CZiwsCoLpLkf0dGRZq+LcX5OiJb0bEsOFww==}
-    dev: false
-
-  /@tanstack/react-query@5.29.2(react@18.2.0):
-    resolution: {integrity: sha512-nyuWILR4u7H5moLGSiifLh8kIqQDLNOHGuSz0rcp+J75fNc8aQLyr5+I2JCHU3n+nJrTTW1ssgAD8HiKD7IFBQ==}
-    peerDependencies:
-      react: ^18.0.0
-    dependencies:
-      '@tanstack/query-core': 5.29.0
-      react: 18.2.0
     dev: false
 
   /@tanstack/vue-query@5.29.0(vue@3.4.21):
@@ -1550,7 +1521,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001609
+      caniuse-lite: 1.0.30001610
       electron-to-chromium: 1.4.736
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
@@ -1573,8 +1544,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite@1.0.30001609:
-    resolution: {integrity: sha512-JFPQs34lHKx1B5t1EpQpWH4c+29zIyn/haGsbpfq3suuV9v56enjFt23zqijxGTMwy1p/4H2tjnQMY+p1WoAyA==}
+  /caniuse-lite@1.0.30001610:
+    resolution: {integrity: sha512-QFutAY4NgaelojVMjY63o6XlZyORPaLfyMnsl3HgnWdJUcX6K0oaJymHjH8PT5Gk7sTm8rvC/c5COUQKXqmOMA==}
     dev: true
 
   /chalk@2.4.2:
@@ -2191,6 +2162,7 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: true
 
   /js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -2268,13 +2240,6 @@ packages:
   /lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: true
-
-  /loose-envify@1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
-    hasBin: true
-    dependencies:
-      js-tokens: 4.0.0
-    dev: false
 
   /lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
@@ -2554,23 +2519,6 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /react-dom@18.2.0(react@18.2.0):
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
-    peerDependencies:
-      react: ^18.2.0
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
-    dev: false
-
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
-
   /read-package-json-fast@3.0.2:
     resolution: {integrity: sha512-0J+Msgym3vrLOUB3hzQCuZHII0xkNGCtz/HJH9xZshwv9DbDwkw1KaE3gx/e2J5rpEY5rtOy6cyhKOPrkP7FZw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -2640,12 +2588,6 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
-  /scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
-
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
@@ -2702,10 +2644,6 @@ packages:
     resolution: {integrity: sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /stable-hash@0.0.4:
-    resolution: {integrity: sha512-LjdcbuBeLcdETCrPn9i8AYAZ1eCtu4ECAWtP7UleOiZ9LzVxRzzUZEoZ8zB24nhkQnDWyET0I+3sWokSDS3E7g==}
-    dev: false
 
   /strip-ansi@6.0.1:
     resolution: {integrity: sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==}

@@ -1,8 +1,15 @@
+use std::time::Duration;
+
+use tokio::{
+    sync::mpsc::{self, error::SendError},
+    time::sleep,
+};
+use tokio_stream::wrappers::ReceiverStream;
 use tonic::{Request, Response, Status};
 
 use crate::proto::{
     echo_service_server::EchoService, greet_service_server::GreetService, EchoRequest,
-    EchoResponse, GreetRequest, GreetResponse,
+    EchoResponse, EchoStreamRequest, EchoStreamResponse, GreetRequest, GreetResponse,
 };
 
 #[derive(Debug, Default)]
@@ -18,6 +25,29 @@ impl EchoService for Echo {
         });
 
         Ok(response)
+    }
+
+    type EchoStreamStream = ReceiverStream<Result<EchoStreamResponse, Status>>;
+
+    async fn echo_stream(
+        &self,
+        request: Request<EchoStreamRequest>,
+    ) -> Result<Response<Self::EchoStreamStream>, Status> {
+        let request = request.into_inner();
+
+        let (tx, rx) = mpsc::channel(5);
+
+        tokio::spawn(async move {
+            for _ in 0..request.times {
+                tx.send(Ok(EchoStreamResponse {
+                    message: request.message.clone(),
+                }))
+                .await?;
+                sleep(Duration::from_secs(1)).await;
+            }
+            Ok::<_, SendError<_>>(())
+        });
+        Ok(Response::new(Self::EchoStreamStream::new(rx)))
     }
 }
 
